@@ -1,13 +1,10 @@
-/**
- * Created by rahulshrestha on 2/19/16.
- */
 var express = require('express');
 var app = express();
 
 var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/cats');
+mongoose.connect('mongodb://localhost:27017/cats');
 
 app.use (bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -16,6 +13,6 @@ app.use(bodyParser.urlencoded({
 
 var cats = require('./cat_routes.js')(app);
 
-var server = app.listen(3001, function(){
+var server = app.listen(3000, function(){
     console.log('running at 3000');
 });
