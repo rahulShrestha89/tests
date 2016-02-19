@@ -16,6 +16,6 @@ app.use(bodyParser.urlencoded({
 
 var cats = require('./cat_routes.js')(app);
 
-var server = app.listen(8000, function(){
-    console.log('running at 8000');
+var server = app.listen(3001, function(){
+    console.log('running at 3000');
 });
