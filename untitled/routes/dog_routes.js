@@ -2,7 +2,7 @@
  * Created by rahulshrestha on 2/23/16.
  */
 var _ = require('lodash');
-var Dog = require('./../dog_model.js');
+var Dog = require('./../models/dog_model.js');
 
 module.exports = function(app) {
 
